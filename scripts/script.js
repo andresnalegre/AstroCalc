@@ -7,7 +7,7 @@ let calculationString = '';
 function calculate(button) {
     const buttonValue = button.textContent;
 
-    if (buttonValue === "Clear") {
+    if (buttonValue === "C") {
         clearDisplay();
     } else if (buttonValue === "=") {
         evaluateCalculation();

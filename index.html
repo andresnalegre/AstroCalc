@@ -5,25 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AstroCalc</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="icon" type="image/png" href="./assets/astrocalc.png">
 </head>
 <body>
     <div class="container">
         <div class="title">
+            <img src="./assets/astrocalc.png" alt="AstroCalc Logo" class="logo">
             <h1>AstroCalc</h1>
             <p>A simple project developed by 
                 <a href="https://andresnicolas.com" target="_blank">Andres Nicolas</a>.
             </p>
             <div class="social">
                 <a href="https://github.com/andresnalegre" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon"/>
+                    <img src="./assets/github.png" alt="GitHub" class="social-icon github-icon"/>
                 </a>
                 <a href="https://www.linkedin.com/in/andresni/" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="social-icon"/>
+                    <img src="./assets/linkedIn.png" alt="LinkedIn" class="social-icon"/>
                 </a>
-                <a href="https://www.codecademy.com/profiles/andresnicolas" target="_blank">
-                    <img src="https://play-lh.googleusercontent.com/sfcMEVWE3eIUF5uQ2fo4MeLBFNDGaftbN_t6_i6zbvE6XC0dOcizOMA9cfigSXq7_92b=w240-h480-rw" alt="Codecademy" class="social-icon"/>
+                <a href="https://codepen.io/andresnalegre" target="_blank">
+                    <img src="./assets/codepen.png" alt="Codepen" class="social-icon"/>
                 </a>
             </div>
         </div>
@@ -31,28 +33,30 @@
             <span></span>
         </div>
         <div class="calculator">
-            <input type="text" class="screen" value="" disabled placeholder="Calculate"/>
+            <input type="text" class="screen" value="" disabled placeholder="0"/>
             <div class="buttons">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>+</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>-</button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>*</button>
-                <button>0</button>
-                <button>.</button>
-                <button>/</button>
-                <button id="equals">=</button>
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button id="clear">C</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="operator">+</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="operator">-</button>
+                <button class="number">0</button>
+                <button class="number">.</button>
+                <button class="operator">/</button>
+                <button class="operator">*</button>
+                
+                
             </div>
-            <button id="clear">Clear</button>
+            <button id="equals">=</button>
         </div>
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
