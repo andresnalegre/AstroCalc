@@ -3,66 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AstroCalc - A beautiful calculator web application with space theme">
+    <meta name="theme-color" content="#434C5E">
     <title>AstroCalc</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@800&display=swap" as="style">
     <link rel="preload" href="./styles/styles.css" as="style">
     <link rel="preload" href="./styles/responsive.css" as="style">
-    <link rel="preload" href="./assets/astrocalc.png" as="image" type="image/png">
-    <link rel="preload" href="./assets/github.png" as="image" type="image/png">
-    <link rel="preload" href="./assets/linkedIn.png" as="image" type="image/png">
-    <link rel="preload" href="./assets/codepen.png" as="image" type="image/png">
+    <link rel="preload" href="./assets/astrocalc.png" as="image" fetchpriority="high">
     <link rel="preload" href="./scripts/script.js" as="script">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive2.css">
     <link rel="icon" type="image/png" href="./assets/astrocalc.png">
 </head>
 <body>
-    <div class="container">
-        <div class="title">
-            <img src="./assets/astrocalc.png" alt="AstroCalc Logo" class="logo">
+    <main class="container">
+        <section class="title" aria-label="AstroCalc Information">
+            <img src="./assets/astrocalc.png" alt="AstroCalc Logo" class="logo" width="150" height="150">
             <h1>AstroCalc</h1>
             <p>A simple project developed by 
-                <a href="https://andresnicolas.com" target="_blank">Andres Nicolas</a>.
+                <a href="https://andresnicolas.com" target="_blank" rel="noopener">Andres Nicolas</a>.
             </p>
             <div class="social">
-                <a href="https://github.com/andresnalegre" target="_blank">
-                    <img src="./assets/github.png" alt="GitHub" class="social-icon github-icon"/>
+                <a href="https://github.com/andresnalegre" target="_blank" rel="noopener" aria-label="GitHub Profile" class="social-link github-link">
+                    <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1" class="social-icon">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/andresni/" target="_blank">
-                    <img src="./assets/linkedIn.png" alt="LinkedIn" class="social-icon"/>
+                <a href="https://www.linkedin.com/in/andresni/" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="social-link linkedin-link">
+                    <svg aria-hidden="true" viewBox="0 0 24 24" version="1.1" class="social-icon">
+                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+                    </svg>
                 </a>
-                <a href="https://codepen.io/andresnalegre" target="_blank">
-                    <img src="./assets/codepen.png" alt="Codepen" class="social-icon"/>
+                <a href="https://codepen.io/andresnalegre" target="_blank" rel="noopener" aria-label="Codepen Profile" class="social-link codepen-link">
+                    <svg aria-hidden="true" viewBox="0 0 1000 1000" version="1.1" width="24" height="24" class="social-icon">
+                        <path d="M486.07 2.073c-2.987 1.061-15.362 8.526-27.5 16.59C446.43 26.727 342.225 95.857 227 172.286 96.203 259.043 15.509 313.173 12.199 316.373c-3.107 3.006-6.624 7.808-8.5 11.606L0.5 334.458V500v165.542l3.199 6.479c1.876 3.798 5.393 8.6 8.5 11.606 3.306 3.197 81.318 55.544 207.301 139.101 111.1 73.687 215.5 142.933 232 153.88 32.745 21.726 36.198 23.392 48.5 23.392 12.302 0 15.755-1.666 48.5-23.392 16.5-10.947 120.9-80.193 232-153.88 126.481-83.887 203.979-135.891 207.292-139.101 5.14-4.98 11.208-15.118 11.208-18.728 0-.979.45-2.059 1-2.399.66-.408 1-56.03 1-163.618 0-108.412-.335-162.793-1-162.382-.55.34-1-.237-1-1.281 0-3.715-5.996-13.797-11.208-18.846-3.313-3.21-80.811-55.214-207.292-139.101-111.1-73.687-215.5-142.933-232-153.88-20.574-13.652-31.756-20.453-35.588-21.649-7.524-2.347-19.721-2.197-26.842.33m-198.297 230.752C194.423 294.796 118.148 345.813 118.273 346.196c.372 1.141 152.085 102.851 152.972 102.556.449-.15 42.645-28.393 93.77-62.762l92.955-62.49.015-101.75c.008-55.963-.098-101.716-.235-101.675-.137.041-76.627 50.779-169.977 112.75m254.242-11.035l.015 101.71 92.955 62.49c51.125 34.369 93.321 62.612 93.77 62.762.886.295 152.597-101.413 152.976-102.556.203-.612-50.628-34.471-282.844-188.406L542 120.079l.015 101.711m-541.527 278.21c0 89.925.118 126.712.262 81.75.144-44.963.144-118.538 0-163.5-.144-44.963-.262-8.175-.262 81.75m422.928-51.957c-41.754 28.074-75.916 51.454-75.916 51.957 0 .892 151.179 103 152.5 103 1.321 0 152.5-102.108 152.5-103 0-.892-151.179-103-152.5-103-.367 0-34.83 22.969-76.584 51.043M84 500v75.017l41.75-28.119c22.963-15.465 47.926-32.231 55.474-37.258 7.549-5.027 13.725-9.365 13.725-9.64 0-.275-6.176-4.613-13.725-9.64-7.548-5.027-32.511-21.793-55.474-37.258L84 424.983V500m776.285-37.608c-30.368 20.409-55.214 37.333-55.214 37.608 0 .275 24.846 17.199 55.214 37.608L915.5 574.716l.262-37.358c.144-20.547.144-54.169 0-74.716l-.262-37.358-55.215 37.108m-666.035 139.65c-41.781 28.086-76.069 51.379-76.196 51.762-.203.612 50.628 34.471 282.844 188.406L458 879.921l-.015-101.711-.015-101.71-92.955-62.49c-51.125-34.369-93.321-62.612-93.77-62.762-.448-.149-34.998 22.708-76.78 50.794m440.801 11.736l-93.235 62.722-.015 101.71L542 879.921l56.887-37.711c232.216-153.935 283.047-187.794 282.844-188.406-.263-.792-151.828-102.819-152.678-102.776-.304.015-42.508 28.253-93.787 62.75" fill="#000000" fill-rule="evenodd"></path>
+                    </svg>
                 </a>
             </div>
-        </div>
-        <div class="separator">
+        </section>
+        <div class="separator" aria-hidden="true">
             <span></span>
         </div>
-        <div class="calculator">
-            <input type="text" class="screen" value="" disabled placeholder="0"/>
-            <div class="buttons">
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button id="clear">C</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="operator">+</button>
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="operator">-</button>
-                <button class="number">0</button>
-                <button class="number">.</button>
-                <button class="operator">/</button>
-                <button class="operator">*</button>
+        <section class="calculator" aria-label="Calculator">
+            <output class="screen" aria-live="polite" aria-label="Calculator display">0</output>
+            <div class="buttons" role="group" aria-label="Calculator buttons">
+                <button class="number" aria-label="Number 1">1</button>
+                <button class="number" aria-label="Number 2">2</button>
+                <button class="number" aria-label="Number 3">3</button>
+                <button id="clear" aria-label="Clear all">C</button>
+                <button class="number" aria-label="Number 4">4</button>
+                <button class="number" aria-label="Number 5">5</button>
+                <button class="number" aria-label="Number 6">6</button>
+                <button class="operator" aria-label="Add">+</button>
+                <button class="number" aria-label="Number 7">7</button>
+                <button class="number" aria-label="Number 8">8</button>
+                <button class="number" aria-label="Number 9">9</button>
+                <button class="operator" aria-label="Subtract">-</button>
+                <button class="number" aria-label="Number 0">0</button>
+                <button class="number" aria-label="Decimal point">.</button>
+                <button class="operator" aria-label="Divide">/</button>
+                <button class="operator" aria-label="Multiply">*</button>
             </div>
-            <button id="equals">=</button>
-        </div>
-    </div>
-    <script src="./scripts/script.js"></script>
+            <button id="equals" aria-label="Calculate result">=</button>
+        </section>
+    </main>
+    <script src="./scripts/script.js" defer></script>
 </body>
 </html>
