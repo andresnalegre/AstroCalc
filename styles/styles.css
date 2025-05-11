@@ -529,7 +529,8 @@ button:focus {
         margin-bottom: 0;
     }
     .social {
-        margin-top: 15px;
+        margin-top: -10px;
+        margin-bottom: 35px;
         gap: 15px;
     }
     .social-link {
@@ -631,8 +632,9 @@ button:focus {
         padding: 8px;
     }
     .social {
+        margin-top: -10px;
+        margin-bottom: 35px;
         gap: 15px;
-        margin-top: 15px;
     }
 }
 
@@ -742,7 +744,7 @@ button:focus {
     }
     .social {
         gap: 10px;
-        margin-top: 10px;
+        margin-top: -10px;
     }
 }
 
@@ -799,7 +801,7 @@ button:focus {
     }
     .social {
         gap: 8px;
-        margin-top: 8px;
+        margin-top: -10px;
     }
 }
 
