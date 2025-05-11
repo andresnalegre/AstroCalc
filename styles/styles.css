@@ -69,23 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    
-    background: url('../assets/background.png') no-repeat center/cover;
-    
-    background-image: 
-        image-set(
-            url('../assets/background.webp') type('image/webp'),
-            url('../assets/background.png') type('image/png')
-        );
-    
-    background-image: 
-        -webkit-image-set(
-            url('../assets/background.webp') type('image/webp'),
-            url('../assets/background.png') type('image/png')
-        );
-    
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url('../assets/background.webp') no-repeat center/cover;
     background-size: 120% 120%;
     background-attachment: fixed;
     animation: moveBackground 200s infinite linear;
